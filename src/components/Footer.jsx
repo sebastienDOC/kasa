@@ -1,5 +1,5 @@
-import Kasa from '../../assets/kasa.png';
-import LogoWhite from '../../assets/LOGO_white.png';
+import Kasa from '../assets/kasa.png';
+import LogoWhite from '../assets/LOGO_white.png';
 
 function Footer() {
     return (

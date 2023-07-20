@@ -1,5 +1,5 @@
-import Montagne from '../../assets/montagne.png';
-import Collapsible from '../../components/Collapsible/Collapsible';
+import Montagne from '../assets/montagne.png';
+import Collapsible from '../components/Collapsible';
 import React from 'react';
 
 function APropos() {

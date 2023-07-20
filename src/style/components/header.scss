@@ -1,0 +1,22 @@
+nav {
+    margin: 2% 0;
+    .header {
+        max-width: 1440px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        .header_nav {
+            display: flex;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-primary;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

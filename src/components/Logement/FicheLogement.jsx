@@ -1,8 +1,8 @@
-import Collapsible from '../Collapsible/Collapsible';
+import Collapsible from '../Collapsible';
 import React from 'react';
 import FullStar from '../../assets/star-fill.png';
 import EmptyStar from '../../assets/star-unfill.png';
-import Carousel from '../Carousel/Carousel';
+import Carousel from '../Carousel';
 
 function FicheLogement({ id, pictures, title, location, rating, tags, description, equipments, host }) {
     const fullStar = Array(5).fill(<img src={FullStar} alt={FullStar}/>)

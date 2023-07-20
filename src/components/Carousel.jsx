@@ -1,6 +1,6 @@
 import React, { useState } from "react"
-import ArrowLeft from '../../assets/arrow-left.png';
-import ArrowRight from '../../assets/arrow-right.png';
+import ArrowLeft from '../assets/arrow-left.png';
+import ArrowRight from '../assets/arrow-right.png';
 
 function Carousel({data}) {
     const [slide, setSlide] = useState(0);

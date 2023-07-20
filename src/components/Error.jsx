@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import Error404 from '../../assets/404.png'
+import Error404 from '../assets/404.png'
 
 function Error() {
     return (

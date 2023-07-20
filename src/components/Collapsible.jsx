@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import FlecheHaut from '../../assets/fleche-haut.png'
+import FlecheHaut from '../assets/fleche-haut.png'
 
 const Collapsible = (props) => {
     const [open, setOPen] = useState(false);
@@ -9,7 +9,7 @@ const Collapsible = (props) => {
 
     const [rotateArrow, setRotateArrow] = useState(false);
     const handleRotate = () => setRotateArrow(!rotateArrow);
-    const rotate = rotateArrow ? "rotate(180deg)" : "rotate(0)"
+    const rotate = rotateArrow ? "rotate(-180deg)" : "rotate(0)"
 
     function click() {
         toggle();
@@ -24,7 +24,7 @@ const Collapsible = (props) => {
                 <img src={FlecheHaut} alt='Flêche' style={{ transform: rotate, transition: "all 0.3s linear" }} onClick={click}/>
             </div>
 
-            <div className='transition' style={{maxHeight: open ? '250px' : '0px', transform: open ? 'scaleY(1)' : 'scaleY(0)'}}>{props.children}</div>
+            <div className='transition' style={{maxHeight: open ? '250px' : '0px'}}>{props.children}</div>
 
         </div>
     )
