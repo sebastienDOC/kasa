@@ -5,7 +5,7 @@ import FicheLogement from './FicheLogement';
 function Logement() {
     return (
         <div>
-            {logements.slice(0, 1).map(FicheLogement)}
+            {logements.slice(14, 15).map(FicheLogement)}
         </div>
     )
 }

@@ -10,7 +10,7 @@ function APropos() {
          </div>
 
          <div className='desc'>
-            <Collapsible label="Fiabilité">
+            <Collapsible label="Fiabilité" collapseHeight="10px">
                <p className='desc_p'>
                   Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements,
                   et toutes les informations sont régulièrement vérifiées par nos équipes.

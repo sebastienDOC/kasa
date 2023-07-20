@@ -36,7 +36,7 @@ function Carousel({data}) {
                 {data.map((_ , id) => {
                     return <button 
                         key={id} 
-                        onClick={null} 
+                        onClick={() => setSlide(id)} 
                         className={slide === id ? "point" : "point inactif"}>
                         </button>
                     })}
