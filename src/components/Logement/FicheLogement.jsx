@@ -1,5 +1,4 @@
 import React from 'react';
-// import { useParams } from "react-router-dom";
 import FullStar from '../../assets/star-fill.png';
 import EmptyStar from '../../assets/star-unfill.png';
 import Carousel from '../Carousel';
@@ -9,15 +8,8 @@ function FicheLogement({ id, pictures, title, location, rating, tags, descriptio
     const fullStar = Array(5).fill(<img src={FullStar} alt={FullStar}/>)
     const emptyStar = Array(5).fill(<img src={EmptyStar} alt={EmptyStar}/>)
 
-    // const {logementId} = useParams();
-    
 	return (
-		<div 
-            id={id} 
-            key={id} 
-            className='logement'
-            // className={slide === id ? "logement" : "logement_hidden" }
-        >
+		<div id={id} key={id} className='logement'>
 
             <Carousel data={pictures} />
 
@@ -41,7 +33,7 @@ function FicheLogement({ id, pictures, title, location, rating, tags, descriptio
                         {emptyStar.slice(rating).map(emptyStar => {
                             return <span>{emptyStar}</span>
                         })}
-                    </span>
+                    </span> 
 
                 </div>
             </div>

@@ -4,7 +4,9 @@
 .logement {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 10px;
     margin: 30px auto;
     position: relative;
     .logement_flex {

@@ -2,9 +2,9 @@ import tableau from '../../datas/logements.json'
 import Card from './Card'
 import { Link } from "react-router-dom";
 
-function CardsLogements(index) {
+function CardsLogements() {
     return (
-        <ul key={index} className='box_fiches'>
+        <ul className='box_fiches'>
             {tableau.map(({ id, cover, title }) =>
                 <Link to={'/logement/' + id}>        
                     <Card 
@@ -14,7 +14,6 @@ function CardsLogements(index) {
                         title={title}
                     />
                 </Link>
-                
             )}
         </ul>
     )

@@ -15,6 +15,9 @@
     object-fit: cover;
     border-radius: 20px;
     filter: brightness(75%);
+    @media screen and (max-width: 1024px) {
+        width: 1024px;
+    }
 }
 
 .txt_paysage {
@@ -32,10 +35,14 @@
     padding: 50px 0;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 380px 380px 380px;
-    grid-gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
 }
 
 .card {

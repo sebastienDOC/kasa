@@ -4,7 +4,7 @@ import CardsLogements from '../components/Cards/CardsLogements';
 function Home() {
 
     return (
-        <div>
+        <div className='container'>
             <div className='img_banner_home'>  
                 <img src={Falaise} alt='Falaise et océan' className='img_paysage'/>
                 <h1 className='txt_paysage'>Chez vous, partout et ailleurs</h1>

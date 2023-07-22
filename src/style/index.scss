@@ -16,7 +16,16 @@
 }
 
 body {
-    margin: 0;
+    margin: auto;
+    
+}
+.container {
+    box-sizing: border-box;
+    padding: 10px;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        
+    }
 }
 
 li {
