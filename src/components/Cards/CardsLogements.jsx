@@ -1,22 +1,22 @@
-import logements from '../../datas/logements'
+import tableau from '../../datas/logements.json'
 import Card from './Card'
 import { Link } from "react-router-dom";
 
-function CardsLogements() {
+function CardsLogements(index) {
     return (
-        <div>
-            <ul className='box_fiches'>
-                {logements.map(({id, cover, title}) =>
-                    <Link to="/logement">        
-                        <Card 
-                            key={id}
-                            cover={cover}
-                            title={title}
-                        />
-                    </Link>
-                )}
-            </ul>
-        </div>
+        <ul key={index} className='box_fiches'>
+            {tableau.map(({ id, cover, title }) =>
+                <Link to={'/logement/' + id}>        
+                    <Card 
+                        id={id}
+                        key={id}
+                        cover={cover}
+                        title={title}
+                    />
+                </Link>
+                
+            )}
+        </ul>
     )
 }
 

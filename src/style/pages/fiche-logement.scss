@@ -1,56 +1,12 @@
+.logement_hidden {
+    display: none;
+}
 .logement {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
     margin: 30px auto;
     position: relative;
-    .logement_banner {
-        display: flex;
-        width: 100%;
-        min-height: 500px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        .arrow_left {
-            position: absolute;
-            left: 20px;
-        }
-        .arrow_right {
-            position: absolute;
-            right: 20px;
-        }
-        .logement_picture {
-            height: 500px;
-            width: 100%;
-            object-fit: cover;
-            object-position: 70% 70%;
-            position: absolute;
-            transition: all 0.8s ease;
-        }
-        .hidden {
-            width: 0;
-        }
-        .points {
-            display: flex;
-            position: absolute;
-            bottom: 1rem;
-            .point {
-                background-color: $color-primary;
-                height: 0.6rem;
-                width: 0.4rem;
-                border-radius: 100%;
-                margin: 0 5px;
-                box-shadow: 0 0 5px #555;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-            .inactif {
-                background-color: $color-sec;
-            }
-        }
-    }
     .logement_flex {
         display: flex;
         justify-content: space-between;

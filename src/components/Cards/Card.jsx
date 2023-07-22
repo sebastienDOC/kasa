@@ -1,9 +1,9 @@
-function Card({ cover, title }) {
+function Card({ id, cover, title }) {
 	return (
-		<li className='card'>
-            <img src={cover} alt={cover}/>
+		<li id={id} key={id} className='card'>
+			<img src={cover} alt={cover} />
 			<p>{title}</p>
-            <div className='gradient'></div>
+			<div className='gradient'></div>
 		</li>
 	)
 }

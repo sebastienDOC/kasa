@@ -1,25 +1,25 @@
-import Collapsible from '../Collapsible';
 import React from 'react';
+// import { useParams } from "react-router-dom";
 import FullStar from '../../assets/star-fill.png';
 import EmptyStar from '../../assets/star-unfill.png';
 import Carousel from '../Carousel';
+import Collapsible from '../Collapsible';
 
 function FicheLogement({ id, pictures, title, location, rating, tags, description, equipments, host }) {
     const fullStar = Array(5).fill(<img src={FullStar} alt={FullStar}/>)
     const emptyStar = Array(5).fill(<img src={EmptyStar} alt={EmptyStar}/>)
 
-
-
+    // const {logementId} = useParams();
+    
 	return (
-		<div key={id} className='logement'>
+		<div 
+            id={id} 
+            key={id} 
+            className='logement'
+            // className={slide === id ? "logement" : "logement_hidden" }
+        >
 
-            <div className='logement_banner'>
-                {/* <div className='carousel-item'>
-                    {pictures.map((picture) => <img src={picture} alt={picture} className='logement_picture' />)}   
-                </div> */}
-                <Carousel data={pictures} />
-
-            </div>
+            <Carousel data={pictures} />
 
             <div className='logement_flex'>
                 <span className='logement_title'>

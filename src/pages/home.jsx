@@ -1,7 +1,6 @@
 import Falaise from '../assets/falaise.png';
 import CardsLogements from '../components/Cards/CardsLogements';
 
-
 function Home() {
 
     return (
