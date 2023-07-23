@@ -1,4 +1,5 @@
 function Card({ id, cover, title }) {
+	
 	return (
 		<li id={id} key={id} className='card'>
 			<img src={cover} alt={cover} />

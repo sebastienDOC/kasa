@@ -7,9 +7,9 @@ import Collapsible from '../Collapsible';
 function FicheLogement({ id, pictures, title, location, rating, tags, description, equipments, host }) {
     const fullStar = Array(5).fill(<img src={FullStar} alt={FullStar}/>)
     const emptyStar = Array(5).fill(<img src={EmptyStar} alt={EmptyStar}/>)
-
+    
 	return (
-		<div id={id} key={id} className='logement'>
+		<div key={id} id={id} className='logement'>
 
             <Carousel data={pictures} />
 

@@ -12,10 +12,10 @@ function Logement() {
     if (!logement) {
         return <Error />;
     }
-
+    
     return (
         <div>
-            <FicheLogement 
+            <FicheLogement key={logement.id}
                 {...logement}
             />
         </div>

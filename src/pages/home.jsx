@@ -2,7 +2,6 @@ import Falaise from '../assets/falaise.png';
 import CardsLogements from '../components/Cards/CardsLogements';
 
 function Home() {
-
     return (
         <div className='container'>
             <div className='img_banner_home'>  
