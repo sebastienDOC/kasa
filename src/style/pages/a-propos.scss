@@ -1,11 +1,18 @@
 .img_banner_apropos {
     margin: auto;
-    width: 100%;
-    height: 230px;
+    max-width: 1440px;
+    height: 250px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 0 10px;
     box-sizing: border-box;
+    img{
+        box-sizing: border-box;
+        height: 250px;
+        @media screen and (max-width: 768px) {
+            height: 150px;
+        }
+    }
     @media screen and (max-width: 768px) {
         height: 150px;
     }
@@ -14,9 +21,9 @@
 .desc {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    width: 60%;
     margin: 30px auto;
     @media screen and (max-width: 768px) {
-        margin: 10px auto;
+        margin: 30px auto 20px;
     }
 }
