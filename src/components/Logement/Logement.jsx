@@ -12,13 +12,11 @@ function Logement() {
     if (!logement) {
         return <Error />;
     }
-    
+
     return (
-        <div>
-            <FicheLogement key={logement.id}
-                {...logement}
-            />
-        </div>
+        <FicheLogement key={logement.id}
+            {...logement}
+        />
     )
 }
 
