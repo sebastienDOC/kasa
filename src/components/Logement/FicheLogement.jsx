@@ -26,7 +26,7 @@ function FicheLogement({ id, pictures, title, location, rating, tags, descriptio
                         <p align="right">{host.name}</p>
                         <img className='logement_host_round' src={host.picture} alt={host.name} />
                     </span>
-                    <span>
+                    <span className='rating'>
                         {fullStar.slice(5-rating).map(fullStar => {
                         return <span>{fullStar}</span>
                         })}

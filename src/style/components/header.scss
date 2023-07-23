@@ -6,6 +6,11 @@ nav {
         display: flex;
         justify-content: space-between;
         padding: 10px;
+        img{
+            @media screen and (max-width: 768px) {
+                width: 145px;
+            }
+        }
         .header_nav {
             display: flex;
         }
@@ -18,6 +23,9 @@ nav {
         align-items: center;
         &:hover {
             text-decoration: underline;
+        }
+        @media screen and (max-width: 768px) {
+            font-size: $size-nav-mobile;
         }
     }
 }
