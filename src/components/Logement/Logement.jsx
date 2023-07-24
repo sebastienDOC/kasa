@@ -1,6 +1,6 @@
 import React from 'react';
 import tableau from '../../datas/logements.json'
-import FicheLogement from './FicheLogement';
+import DataLogement from './DataLogement';
 import { useParams  } from 'react-router-dom';
 import Error from '../Error';
 
@@ -14,9 +14,9 @@ function Logement() {
     }
 
     return (
-        <FicheLogement key={logement.id}
+        <DataLogement
             {...logement}
-        />
+        />     
     )
 }
 

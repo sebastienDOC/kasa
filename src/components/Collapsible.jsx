@@ -1,11 +1,11 @@
-import React, { useCallback, useState } from 'react';
+import { useState } from 'react';
 import FlecheHaut from '../assets/fleche-haut.png'
 
 const Collapsible = (props) => {
     const [open, setOPen] = useState(false);
-    const toggle = useCallback(() => {
+    function toggle() {
         setOPen((open) => !open)
-    }, []);
+    };
 
     const [rotateArrow, setRotateArrow] = useState(false);
     const handleRotate = () => setRotateArrow(!rotateArrow);
