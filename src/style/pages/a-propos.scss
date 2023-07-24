@@ -17,12 +17,19 @@
         height: 150px;
     }
 }
-
+.ctn_a-propos{
+    
+}
 .desc {
     display: flex;
     flex-direction: column;
-    width: 85%;
+    max-width: 1240px;
+    padding: 0 10px;
     margin: 30px auto;
+    box-sizing: border-box;
+    @media screen and (max-width: 1440px) {
+        width: 85%;
+    }
     @media screen and (max-width: 768px) {
         margin: 30px auto 20px;
     }

@@ -4,7 +4,7 @@ import React from 'react';
 
 function APropos() {
    return (
-      <div>
+      <div className='ctn_a-propos'>
          <div className='img_banner_apropos'>
             <img src={Montagne} alt='Montagne et forêt' className='img_paysage'/>
          </div>
