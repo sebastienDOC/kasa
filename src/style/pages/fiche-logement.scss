@@ -30,7 +30,7 @@
             }
         }
         h2 {
-            margin: 5px 0 20px;
+            margin: 5px 0 15px;
             @media screen and (max-width: 768px) {
                 font-size: $size-tag;
             }
@@ -43,6 +43,7 @@
             margin: 0 0 20px;
             @media screen and (max-width: 768px) {
                 margin: 0;
+                flex-wrap: wrap;
             }
         }
         .logement_li_flex {
@@ -53,6 +54,7 @@
             margin-right: 10px;
             @media screen and (max-width: 768px) {
                 font-size: $size-tag-mobile;
+                margin-top: 5px;
             }
         }
     }

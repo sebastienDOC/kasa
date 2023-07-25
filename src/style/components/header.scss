@@ -1,5 +1,8 @@
 nav {
     margin: 2% 0;
+    @media screen and (max-width: 768px) {
+        text-transform: uppercase;
+    }
     .header {
         max-width: 1440px;
         margin: auto;
@@ -27,6 +30,7 @@ nav {
         }
         @media screen and (max-width: 768px) {
             font-size: $size-nav-mobile;
+            text-align: center;
         }
     }
 }
