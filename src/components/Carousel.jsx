@@ -12,10 +12,10 @@ function Carousel({data}) {
     };
 
     return (
-        <div className="logement_banner">{data.map((item, id) => {
+        <div className="logement_banner">{data.map((image, id) => {
             return <img 
-                src={item} 
-                alt={item} 
+                src={image} 
+                alt={image} 
                 key={id} 
                 className={slide === id ? "logement_picture" : "logement_picture hidden" } 
             />

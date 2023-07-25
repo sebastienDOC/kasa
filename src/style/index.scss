@@ -40,18 +40,30 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
     h2 {
         color: $color-primary;
         font-size: $size-subtitle;
         margin-bottom: 80px;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+             font-size: $size-p;     
+        }
     }
     img{
         margin: 100px 0;
-
+        @media screen and (max-width: 768px) {
+            width: 200px;
+            height: 100px;        
+        }
     }
     a{
         color: $color-primary;
         font-size: $size-p;
         margin: 50px 0;
+        @media screen and (max-width: 768px) {
+            font-size: $size-tag;     
+       }
     }
 }
+
