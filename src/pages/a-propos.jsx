@@ -1,6 +1,6 @@
 import Montagne from '../assets/montagne.png';
 import Collapsible from '../components/Collapsible';
-import about from '../datas/about.json'
+import about from '../datas/about.json';
 
 function APropos() {
    return (

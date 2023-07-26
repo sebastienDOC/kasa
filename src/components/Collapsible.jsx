@@ -19,7 +19,7 @@ const Collapsible = (props) => {
     return(
         <div className='desc_ctn'>
 
-            <div className='desc_ctn_flex'>
+            <div className='desc_ctn_flex' onClick={click}>
                 <button className='desc_ctn_btn'>{props.label}</button>
                 <img src={FlecheHaut} alt='Flêche' style={{ transform: rotate, transition: "all 0.6s ease" }} onClick={click}/>
             </div>
