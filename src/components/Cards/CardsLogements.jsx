@@ -8,7 +8,7 @@ function CardsLogements() {
     return (
         <ul className='box_fiches' >
             {tableau.map((data) =>
-                <Link to={'/logement/' + data.id} key={data.id}>        
+                <Link to={'/kasa/logement/' + data.id} key={data.id}>        
                     <Card 
                         cover={data.cover}
                         title={data.title}
