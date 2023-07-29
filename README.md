@@ -2,4 +2,4 @@
 
 ### Créez une application web de location immobilière avec React
 
-Lien GitHub Pages : https://sebastiendoc.github.io/kasa/home
+Lien GitHub Pages : https://sebastiendoc.github.io/kasa/
