@@ -7,9 +7,9 @@ import Error from '../components/Error';
 function Router() {
     return (
         <Routes>
-            <Route path="/kasa/" element={<Home />} />
-            <Route path="/kasa/a-propos" element={<APropos />} />
-            <Route path="/kasa/logement/:logementId" element={<Logement />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/a-propos" element={<APropos />} />
+            <Route path="/logement/:logementId" element={<Logement />} />
             <Route path="*" element={<Error />} />
         </Routes>
     )
