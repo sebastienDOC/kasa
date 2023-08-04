@@ -10,6 +10,7 @@ function Carousel({data}) {
     const prevSlide = () => {
         setSlide(slide === 0 ? data.length - 1 : slide - 1);
     };
+    const showNavigate = data.length > 1;
 
     return (
         <div className="logement_banner">{data.map((image, id) => {
@@ -23,16 +24,16 @@ function Carousel({data}) {
             <img 
                 src={ArrowLeft} 
                 alt='Flêche gauche' 
-                className='arrow_left' 
+                className={data.length !== 1 ? 'arrow_left' : 'arrow_hidden'}
                 onClick={prevSlide}
             />
             <img 
                 src={ArrowRight} 
                 alt='Flêche droite' 
-                className='arrow_right' 
+                className={data.length !== 1 ? 'arrow_right' : 'arrow_hidden'}
                 onClick={nextSlide}
             />
-            <span className="points">
+            {showNavigate && (<span className="points">
                 {data.map((_ , id) => {
                     return <button 
                         key={id} 
@@ -40,7 +41,7 @@ function Carousel({data}) {
                         className={slide === id ? "point" : "point inactif"}>
                         </button>
                     })}
-            </span>
+            </span>)}
         </div>
     )
 }

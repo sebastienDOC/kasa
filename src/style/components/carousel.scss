@@ -25,6 +25,9 @@
             right: 5px;
         }
     }
+    .arrow_hidden{
+        display: none;
+    }
     .logement_picture {
         height: 500px;
         width: 100%;
@@ -43,6 +46,9 @@
         display: flex;
         position: absolute;
         bottom: 1rem;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
         .point {
             background-color: $color-primary;
             height: 0.65rem;
@@ -57,5 +63,8 @@
         .inactif {
             background-color: $color-sec;
         }
+    }
+    .point_hidden {
+        display: none;
     }
 }
